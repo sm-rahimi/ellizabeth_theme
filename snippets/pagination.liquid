@@ -1,38 +1,13 @@
-{% if pagination.pages > 0 %}
-  <nav role="navigation" aria-label="Pagination">
-    <ul class="flex justify-center">
-      {% if pagination.previous %}
-        <li>
-          <a
-            href="{{ pagination.previous.url }}"
-            class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 hover:text-gray-500"
-          >
-            Previous
-          </a>
-        </li>
-      {% endif %}
+{% if pagination.pages > 1 %}
+<nav role="navigation" class="flex justify-center items-center my-8">
+  {% if pagination.previous %}
+  <a href="{{ pagination.previous.url }}"
+    class="border border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white px-8 py-3 mx-1 rounded-sm font-medium">Previous</a>
+  {% endif %}
 
-      {% for page in pagination.pages %}
-        <li>
-          <a
-            href="{{ page.url }}"
-            class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 hover:text-gray-500 {% if page.is_current %}bg-gray-100{% endif %}"
-          >
-            {{ page.title }}
-          </a>
-        </li>
-      {% endfor %}
-
-      {% if pagination.next %}
-        <li>
-          <a
-            href="{{ pagination.next.url }}"
-            class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 hover:text-gray-500"
-          >
-            Next
-          </a>
-        </li>
-      {% endif %}
-    </ul>
-  </nav>
+  {% if pagination.next %}
+  <a href="{{ pagination.next.url }}"
+    class="border border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white px-8 py-3 mx-1 rounded-sm font-medium">Next</a>
+  {% endif %}
+</nav>
 {% endif %}
