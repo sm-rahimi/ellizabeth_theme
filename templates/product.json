@@ -1,39 +1,56 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "template": {
       "type": "template-product",
       "blocks": {
-        "vendor": {
-          "type": "vendor"
+        "vendor_qtaxtz": {
+          "type": "vendor",
+          "settings": {}
         },
-        "title": {
-          "type": "title"
+        "title_LqXLMy": {
+          "type": "title",
+          "settings": {}
         },
-        "price": {
-          "type": "price"
+        "price_V3TcxY": {
+          "type": "price",
+          "settings": {}
         },
-        "variant_selector": {
-          "type": "variant_selector"
+        "variant_selector_ix4VC3": {
+          "type": "variant_selector",
+          "settings": {}
         },
-        "quantity": {
-          "type": "quantity"
+        "quantity_wFjQwL": {
+          "type": "quantity",
+          "settings": {}
         },
-        "description": {
-          "type": "description"
+        "description_EMU9Ry": {
+          "type": "description",
+          "settings": {}
         },
-        "checkout_buttons": {
-          "type": "checkout_buttons"
+        "checkout_buttons_XgnwfG": {
+          "type": "checkout_buttons",
+          "settings": {}
         }
       },
       "block_order": [
-        "vendor",
-        "title",
-        "price",
-        "variant_selector",
-        "quantity",
-        "description",
-        "checkout_buttons"
-      ]
+        "vendor_qtaxtz",
+        "title_LqXLMy",
+        "price_V3TcxY",
+        "variant_selector_ix4VC3",
+        "quantity_wFjQwL",
+        "description_EMU9Ry",
+        "checkout_buttons_XgnwfG"
+      ],
+      "settings": {}
     }
   },
   "order": [
